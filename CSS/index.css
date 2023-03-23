@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Source+Sans+Pro:wght@200;400;600;700;900&display=swap');
+
+:root {
+    --main-color: #fff;
+}
+
+*, html, body {
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.content {
+    background-image: url("../img/default_wallpaper.jpg");
+    display: none;
+}
+
+.OSName {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: fit-content;
+    color: var(--main-color);
+    font-size: 6em;
+    font-weight: 900;
+    text-align: center;
+}
+
+.clock {
+    position: fixed;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: fit-content;
+    color: var(--main-color);
+    font-size: 5em;
+    font-weight: 700;
+}

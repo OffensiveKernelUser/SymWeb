@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+
+.super-container {
+  width: 100%;
+  height: 100%;
+  cursor: none;
+  background: #111;
+  background-size: 25vmin;
+  background-repeat: no-repeat;
+  background-position: center 40%;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.container {
+  font-family: 'Inter';
+  color: #FFF;
+}
+
+.main_logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  height: 180px;
+}
+
+.progress {
+  width: 200px;
+  max-width: 85vw;
+  height: 4px;
+  position: absolute;
+  bottom: 20vh;
+  left: 50%;
+  top: calc(50vh + 120px);
+  border-radius: 4px;
+  background: rgba(255,255,255,0.5);
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+.progress:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: #fff;
+  animation: load 3s linear;
+}
+
+
+@-moz-keyframes load {
+  0% {
+    width: 0;
+  }
+  10% {
+    width: 5%;
+  }
+  20% {
+    width: 15%;
+  }
+  30% {
+    width: 25%;
+  }
+  40% {
+    width: 30%;
+  }
+  50% {
+    width: 44%;
+  }
+  60% {
+    width: 50%;
+  }
+  70% {
+    width: 72%;
+  }
+  80% {
+    width: 84%;
+  }
+  90% {
+    width: 92%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes load {
+  0% {
+    width: 0;
+  }
+  10% {
+    width: 5%;
+  }
+  20% {
+    width: 15%;
+  }
+  30% {
+    width: 25%;
+  }
+  40% {
+    width: 30%;
+  }
+  50% {
+    width: 44%;
+  }
+  60% {
+    width: 50%;
+  }
+  70% {
+    width: 72%;
+  }
+  80% {
+    width: 84%;
+  }
+  90% {
+    width: 92%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@-o-keyframes load {
+  0% {
+    width: 0;
+  }
+  10% {
+    width: 5%;
+  }
+  20% {
+    width: 15%;
+  }
+  30% {
+    width: 25%;
+  }
+  40% {
+    width: 30%;
+  }
+  50% {
+    width: 44%;
+  }
+  60% {
+    width: 50%;
+  }
+  70% {
+    width: 72%;
+  }
+  80% {
+    width: 84%;
+  }
+  90% {
+    width: 92%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes load {
+  0% {
+    width: 0;
+  }
+  10% {
+    width: 5%;
+  }
+  20% {
+    width: 15%;
+  }
+  30% {
+    width: 25%;
+  }
+  40% {
+    width: 30%;
+  }
+  50% {
+    width: 44%;
+  }
+  60% {
+    width: 50%;
+  }
+  70% {
+    width: 72%;
+  }
+  80% {
+    width: 84%;
+  }
+  90% {
+    width: 92%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.version {
+  margin-right: 2px;
+  text-align: right;
+}
