@@ -5,4 +5,4 @@ setTimeout(() => {
     boot.style.display = "none";
     lockpage.style.display = "block";
 }, 
-3000);
+0000); // default value: 3000, 0000 is for development purposes

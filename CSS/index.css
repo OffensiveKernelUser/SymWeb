@@ -10,14 +10,16 @@
     margin: 0;
     padding: 0;
     font-family: "Source Sans Pro", sans-serif;
+    overflow: hidden;
 }
 
 .content {
+    position: absolute;
     width: 100vw;
     height: 100vh;
     background-image: url("../img/default_wallpaper.jpg");
-    backdrop-filter: blur(8px);
     display: none;
+    transition: all 2s ease;
 }
 
 .clock {
@@ -27,6 +29,95 @@
     transform: translate(-50%, -50%);
     height: fit-content;
     color: var(--main-color);
-    font-size: 1000%;
+    font-size: 9vw;
     font-weight: 700;
+    transition: all 2s ease;
+}
+
+.login-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 58vh;
+    display: none;
+    transition: all 2s ease;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.login-logo {
+    border-radius: 500%;
+    width: 15vw;
+    height: 15vw;
+    margin: 0 auto;
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 20vh;
+    width: 100%;
+}
+
+.input-field {
+    height: fit-content;
+    width: 15vw;
+}
+
+.input-field input{
+    height: 40px;
+    width: 100%;
+    border: none;
+    padding-left: 15px;
+    outline: none;
+    font-size: 19px;
+    color: white;
+    font-weight: 500;
+    border-radius: 7px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    transition: .4s;
+}
+
+input:focus{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.button-field {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button-field button {
+    height: 40px;
+    width: 48%;
+    border: none;
+    outline: none;
+    font-size: 19px;
+    color: white;
+    font-weight: 500;
+    border-radius: 7px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    transition: .4s;
+}
+
+.button-field button:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.button-field button:active {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.button-field button:focus {
+    background-color: rgba(0, 0, 0, 0.3);
 }
